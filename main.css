@@ -402,3 +402,69 @@
 body.modal-open-video {
     overflow: hidden;
 }
+
+/* Current role card */
+
+.current-role {
+    display: block;
+    margin-top: 2rem;
+    padding: 1.25rem 1.4rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.current-role-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.social-btn-sm {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.78rem;
+    gap: 6px;
+}
+
+.social-btn-sm svg {
+    width: 13px;
+    height: 13px;
+}
+
+.current-role-label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #00ebe3;
+    margin-bottom: 0.9rem;
+}
+
+.current-role-logo {
+    display: block;
+    height: 34px;
+    width: auto;
+    margin-bottom: 0.9rem;
+}
+
+.current-role-title {
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.current-role-company {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.current-role-dates {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.35rem;
+}
