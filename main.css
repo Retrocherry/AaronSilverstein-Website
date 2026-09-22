@@ -310,12 +310,78 @@
     border-left-color: #102438;
 }
 
-.video-caption {
+/* Video layout */
+
+.featured-video {
+    margin-bottom: 3.5rem;
+}
+
+.video-meta {
+    margin-top: 1.25rem;
+}
+
+.video-label {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #00ebe3;
+    margin-bottom: 0.35rem;
+}
+
+.video-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0.9rem 0 0;
+}
+
+.featured-video .video-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.video-desc {
     color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    font-size: 0.95rem;
     line-height: 1.6;
-    margin: 1rem 0 3.5rem;
+    margin-top: 0.35rem;
+}
+
+.section-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    padding-bottom: 0.9rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.25rem 1.5rem;
+}
+
+.video-grid .play-btn {
+    width: 56px;
+    height: 56px;
+}
+
+.video-grid .play-btn::before {
+    border-width: 9px 0 9px 14px;
+}
+
+@media (max-width: 575px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Video modal */
@@ -372,31 +438,74 @@
 .video-modal-title {
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
+}
+
+.video-modal-desc {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    max-width: 640px;
+    margin: 0.35rem auto 0;
+    line-height: 1.6;
+}
+
+.video-modal-desc:empty {
+    display: none;
 }
 
 .video-modal-close {
     position: absolute;
-    top: -52px;
+    top: -56px;
     right: 0;
-    width: 42px;
-    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     border-radius: 50%;
-    border: none;
-    font-size: 1.75rem;
-    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    transition: background 0.25s ease, transform 0.25s ease;
+    opacity: 0;
+    transform: scale(0.6) rotate(-90deg);
+    transition: opacity 0.3s ease 0.1s, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s,
+        background 0.2s ease, border-color 0.2s ease;
+}
+
+.video-modal-close svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    fill: none;
+    transition: transform 0.3s ease;
+}
+
+.video-modal.is-open .video-modal-close {
+    opacity: 1;
+    transform: none;
 }
 
 .video-modal-close:hover,
-.video-modal-close:focus {
-    background: rgba(255, 255, 255, 0.25);
-    transform: rotate(90deg);
+.video-modal-close:focus-visible {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.4);
     outline: none;
+}
+
+.video-modal-close:hover svg,
+.video-modal-close:focus-visible svg {
+    transform: rotate(90deg);
+}
+
+.video-modal-close:active svg {
+    transform: rotate(90deg) scale(0.85);
 }
 
 body.modal-open-video {
@@ -467,4 +576,30 @@ body.modal-open-video {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 0.35rem;
+}
+
+/* Toast */
+
+.toast-msg {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    z-index: 1100;
+    max-width: calc(100% - 32px);
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #102438;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 16px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.toast-msg.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
 }

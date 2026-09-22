@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css?v=3">
     <link rel="stylesheet" href="layout.css">
 
     <!-- Java -->
@@ -99,8 +99,8 @@
                         <a class="btn btn-primary btn-pill"
                             href="https://drive.google.com/file/d/1msTzZj3Ymi7iM3icA9EHT0G4Rc-jmytE/view?usp=share_link"
                             target="_blank" role="button">Resume</a>
-                        <a class="btn btn-outline-gradient btn-pill" href="mailto:aaronsilverstein117@gmail.com"
-                            target="_blank" role="button"><span>Contact</span></a>
+                        <a class="btn btn-outline-gradient btn-pill" id="contactBtn" href="mailto:aaronsilverstein117@gmail.com"
+                            role="button">Contact</a>
                     </div>
 
                     <!-- social links go here -->
@@ -119,90 +119,88 @@
 
                 <div class="col-lg-8">
 
-                    <!-- Session 2 2026 Moshava Alevy Recap -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/2pnJC_4CEBw?autoplay=1&rel=0" data-title="Session 2 2026 Moshava Alevy Recap">
-                        <img src="https://i.ytimg.com/vi/2pnJC_4CEBw/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Session 2 2026 Moshava Alevy Recap</span>
-                    </button>
-                    <p class="video-caption">Session 2 2026 Moshava Alevy Recap</p>
+                    <!-- Featured video -->
+                    <div class="featured-video">
+                        <button type="button" class="video-card" data-video="https://www.youtube.com/embed/2pnJC_4CEBw?autoplay=1&rel=0" data-title="Moshava Alevy: Session 2 Recap" data-desc="Session 2 2026 Moshava Alevy Recap.">
+                            <img src="https://i.ytimg.com/vi/2pnJC_4CEBw/maxresdefault.jpg" alt="" loading="lazy">
+                            <span class="play-btn" aria-hidden="true"></span>
+                            <span class="sr-only">Play video: Moshava Alevy: Session 2 Recap</span>
+                        </button>
+                        <div class="video-meta">
+                            <span class="video-label">Latest</span>
+                            <h4 class="video-title">Moshava Alevy: Session 2 Recap</h4>
+                            <p class="video-desc">Session 2 2026 Moshava Alevy Recap.</p>
+                        </div>
+                    </div>
 
-                    <!-- Week 3 2026 Recap -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/e1eT2ZOVBa8?autoplay=1&rel=0" data-title="Week 3 2026 Recap video">
-                        <img src="https://i.ytimg.com/vi/e1eT2ZOVBa8/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Week 3 2026 Recap video</span>
-                    </button>
-                    <p class="video-caption">Week 3 2026 Recap video</p>
+                    <h2 class="section-label">More Work</h2>
 
-                    <!-- Lex Eterna -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/s7CMZ_rr7xY?autoplay=1&rel=0" data-title="LEX ETERNA — Nero’s “Believe” Speech">
-                        <img src="https://i.ytimg.com/vi/s7CMZ_rr7xY/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: LEX ETERNA — Nero’s “Believe” Speech</span>
-                    </button>
-                    <p class="video-caption">LEX ETERNA — Nero’s “Believe” Speech</p>
-
-                    <!-- ADAM AND EVEN -->
-                    <!-- <iframe src="https://drive.google.com/file/d/1CG5-9zY04ffCCSVVoExKWiFE_F-J113p/preview" width="640"
-                        height="480" allow="autoplay"></iframe> -->
-
-                    <!-- Adam and Eve  -->
-                    <button type="button" class="video-card" data-video="https://drive.google.com/file/d/1CG5-9zY04ffCCSVVoExKWiFE_F-J113p/preview" data-title="Edited a teaser trailer for a multi media play.">
-                        <img src="https://drive.google.com/thumbnail?id=1CG5-9zY04ffCCSVVoExKWiFE_F-J113p&sz=w1280" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Edited a teaser trailer for a multi media play.</span>
-                    </button>
-                    <p class="video-caption">Edited a teaser trailer for a multi media play.</p>
-
-                    <!-- Spiderman  -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/1PwpyI06Xmw?autoplay=1&rel=0" data-title="Edited a theoretical anime opening for Spider-Man: No Way Home.">
-                        <img src="https://i.ytimg.com/vi/1PwpyI06Xmw/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Edited a theoretical anime opening for Spider-Man: No Way Home.</span>
-                    </button>
-                    <p class="video-caption">Edited a theoretical anime opening for
-                        Spider-Man: No Way Home.</p>
-
-
-                    <!-- Recurion  -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/2e6Ys5LFvno?autoplay=1&rel=0" data-title="Wrote, shot, directed, and edited a trailer for my short film.">
-                        <img src="https://i.ytimg.com/vi/2e6Ys5LFvno/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Wrote, shot, directed, and edited a trailer for my short film.</span>
-                    </button>
-                    <p class="video-caption">Wrote, shot, directed, and edited a trailer
-                        for my short film.</p>
-
-                    <!-- Look at the sky  -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/XO4L_VTI6oM?autoplay=1&rel=0" data-title="Edited a Music Video for the anime film &quot;Weathering With You&quot; synced to the song &quot;Look at the Sky&quot; by Porter Robinson.">
-                        <img src="https://i.ytimg.com/vi/XO4L_VTI6oM/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Edited a Music Video for the anime film &quot;Weathering With You&quot; synced to the song &quot;Look at the Sky&quot; by Porter Robinson.</span>
-                    </button>
-                    <p class="video-caption">Edited a Music Video for the anime film
-                        "Weathering With You" synced to the song "Look at the Sky"
-                        by Porter Robinson.
-                    </p>
-
-                    <!-- avengers -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/gz1BtcgAFjA?autoplay=1&rel=0" data-title="Edited a fan-made trailer in the style of Sony Pictures for the film Avengers: Endgame.">
-                        <img src="https://i.ytimg.com/vi/gz1BtcgAFjA/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: Edited a fan-made trailer in the style of Sony Pictures for the film Avengers: Endgame.</span>
-                    </button>
-                    <p class="video-caption">Edited a fan-made trailer in the style of Sony
-                        Pictures for the film Avengers: Endgame.</p>
-
-                    <!-- bladerunner -->
-                    <button type="button" class="video-card" data-video="https://www.youtube.com/embed/sIugiBlP4pc?autoplay=1&rel=0" data-title="A video essay exploring the film form and meaning of Blade Runner: 2049.">
-                        <img src="https://i.ytimg.com/vi/sIugiBlP4pc/maxresdefault.jpg" alt="" loading="lazy">
-                        <span class="play-btn" aria-hidden="true"></span>
-                        <span class="sr-only">Play video: A video essay exploring the film form and meaning of Blade Runner: 2049.</span>
-                    </button>
-                    <p class="video-caption">A video essay exploring the film form and
-                        meaning of Blade Runner: 2049.</p>
-
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/e1eT2ZOVBa8?autoplay=1&rel=0" data-title="Moshava Alevy: Week 3 Recap" data-desc="Week 3 2026 recap video.">
+                                <img src="https://i.ytimg.com/vi/e1eT2ZOVBa8/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Moshava Alevy: Week 3 Recap</span>
+                            </button>
+                            <h4 class="video-title">Moshava Alevy: Week 3 Recap</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/s7CMZ_rr7xY?autoplay=1&rel=0" data-title="Lex Eterna" data-desc="Nero’s “Believe” Speech.">
+                                <img src="https://i.ytimg.com/vi/s7CMZ_rr7xY/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Lex Eterna</span>
+                            </button>
+                            <h4 class="video-title">Lex Eterna</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://drive.google.com/file/d/1CG5-9zY04ffCCSVVoExKWiFE_F-J113p/preview" data-title="Adam and Eve and Steve" data-desc="Edited a teaser trailer for a multi media play.">
+                                <img src="https://drive.google.com/thumbnail?id=1CG5-9zY04ffCCSVVoExKWiFE_F-J113p&sz=w1280" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Adam and Eve and Steve</span>
+                            </button>
+                            <h4 class="video-title">Adam and Eve and Steve</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/1PwpyI06Xmw?autoplay=1&rel=0" data-title="Spider-Man: No Way Home Anime Opening" data-desc="Edited a theoretical anime opening for Spider-Man: No Way Home.">
+                                <img src="https://i.ytimg.com/vi/1PwpyI06Xmw/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Spider-Man: No Way Home Anime Opening</span>
+                            </button>
+                            <h4 class="video-title">Spider-Man: No Way Home Anime Opening</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/2e6Ys5LFvno?autoplay=1&rel=0" data-title="Recursion Trailer" data-desc="Wrote, shot, directed, and edited a trailer for my short film.">
+                                <img src="https://i.ytimg.com/vi/2e6Ys5LFvno/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Recursion Trailer</span>
+                            </button>
+                            <h4 class="video-title">Recursion Trailer</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/XO4L_VTI6oM?autoplay=1&rel=0" data-title="Look at the Sky" data-desc="Edited a music video for the anime film “Weathering With You” synced to the song “Look at the Sky” by Porter Robinson.">
+                                <img src="https://i.ytimg.com/vi/XO4L_VTI6oM/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Look at the Sky</span>
+                            </button>
+                            <h4 class="video-title">Look at the Sky</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/gz1BtcgAFjA?autoplay=1&rel=0" data-title="Avengers: Endgame, Sony Style" data-desc="Edited a fan-made trailer in the style of Sony Pictures for the film Avengers: Endgame.">
+                                <img src="https://i.ytimg.com/vi/gz1BtcgAFjA/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Avengers: Endgame, Sony Style</span>
+                            </button>
+                            <h4 class="video-title">Avengers: Endgame, Sony Style</h4>
+                        </div>
+                        <div class="video-item">
+                            <button type="button" class="video-card" data-video="https://www.youtube.com/embed/sIugiBlP4pc?autoplay=1&rel=0" data-title="Blade Runner 2049 Video Essay" data-desc="A video essay exploring the film form and meaning of Blade Runner: 2049.">
+                                <img src="https://i.ytimg.com/vi/sIugiBlP4pc/maxresdefault.jpg" alt="" loading="lazy">
+                                <span class="play-btn" aria-hidden="true"></span>
+                                <span class="sr-only">Play video: Blade Runner 2049 Video Essay</span>
+                            </button>
+                            <h4 class="video-title">Blade Runner 2049 Video Essay</h4>
+                        </div>
+                    </div>
 
                     <!-- <div class="iframe-container mb-5">
                         <iframe width="560" height="315" class="aaron-film"
@@ -253,12 +251,16 @@
     <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle" hidden>
         <div class="video-modal-backdrop" data-close></div>
         <div class="video-modal-dialog">
-            <button type="button" class="video-modal-close" data-close aria-label="Close video">&times;</button>
+            <button type="button" class="video-modal-close" data-close aria-label="Close video">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
             <div class="iframe-container video-modal-frame"></div>
             <p class="video-modal-title" id="videoModalTitle"></p>
+            <p class="video-modal-desc"></p>
         </div>
     </div>
-    <script src="video-modal.js"></script>
+    <div class="toast-msg" id="toast" role="status" aria-live="polite"></div>
+    <script src="video-modal.js?v=3"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
