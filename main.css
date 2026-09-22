@@ -301,8 +301,13 @@
 .video-card:hover .play-btn,
 .video-card:focus-visible .play-btn {
     transform: translate(-50%, -50%) scale(1.1);
-    border-color: transparent;
-    background: linear-gradient(135deg, #00ebe3, #4b34e8, #8626aa, #f89529);
+    border-color: #fff;
+    background: #fff;
+}
+
+.video-card:hover .play-btn::before,
+.video-card:focus-visible .play-btn::before {
+    border-left-color: #102438;
 }
 
 .video-caption {
